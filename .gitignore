@@ -17,3 +17,5 @@ tmp
 _yardoc
 doc/
 .spotify
+spotify_appkey.key
+spotify_tracefile.txt
