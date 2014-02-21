@@ -29,7 +29,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  plaything
-  pry
+  plaything (~> 1.1.1)
+  pry (~> 0.9.12.6)
   rspec (~> 2.14.1)
-  spotify
+  spotify (~> 12.5.3)
