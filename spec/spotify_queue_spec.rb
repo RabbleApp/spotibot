@@ -28,6 +28,30 @@ describe SpotifyQueue do
   end
 
   describe "#next" do
+    let(:queue) { SpotifyQueue.new }
 
+    before do
+      queue.enqueue("katy perry")
+      queue.enqueue("michael jackson")
+    end
+
+    it "returns the first item in the queue" do
+      expect(queue.next).to eq("katy perry")
+    end
+
+    it "removes the first item in the queue" do
+      queue.next
+
+      expect(queue.queue).to_not include("katy perry")
+    end
+
+    it "returns the consecutive items from the queue" do
+      expect(queue.next).to eq("katy perry")
+      expect(queue.next).to eq("michael jackson")
+    end
   end
 end
+
+
+
+

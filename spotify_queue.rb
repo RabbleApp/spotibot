@@ -12,4 +12,8 @@ class SpotifyQueue
   def dequeue(song)
     @queue.delete(song)
   end
+
+  def next
+    @queue.shift
+  end
 end
