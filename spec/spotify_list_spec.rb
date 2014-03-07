@@ -1,4 +1,4 @@
-require_relative "../spotify_list"
+require "spec_helper"
 
 describe SpotifyList do
   describe "#next" do

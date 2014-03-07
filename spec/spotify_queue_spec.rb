@@ -1,4 +1,4 @@
-require_relative "../spotify_queue"
+require "spec_helper"
 
 describe SpotifyQueue do
   describe "#enqueue" do
