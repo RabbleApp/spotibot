@@ -7,7 +7,16 @@ class SpotifyList
 
   def next
     next_song = @songs[@current_index]
-    @current_index += 1
+    increment_or_reset_index
     next_song
+  end
+
+  private
+  def increment_or_reset_index
+    if @current_index == @songs.length - 1
+      @current_index = 0
+    else
+      @current_index += 1
+    end
   end
 end
